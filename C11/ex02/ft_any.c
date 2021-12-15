@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_any.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayalman <ayalman@42kocaeli.com>            +#+  +:+       +#+        */
+/*   By: ayalman <ayalman@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/27 21:05:14 by ayalman           #+#    #+#             */
-/*   Updated: 2021/12/15 21:50:40 by ayalman          ###   ########.Tr       */
+/*   Created: 2021/12/16 00:39:57 by ayalman           #+#    #+#             */
+/*   Updated: 2021/12/16 00:42:28 by ayalman          ###   ########.Tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int	*a,	int	*b)
+int	ft_any(char **tab, int(*f)(char*))
 {
-	int	tempo;
+	int	i;
 
-	tempo = *a;
-	*a = *b;
-	*b = tempo;
+	i = 0;
+	while (tab[i])
+	{
+		if (f(tab[i]))
+			return (1);
+		i++;
+	}
+	return (0);
 }

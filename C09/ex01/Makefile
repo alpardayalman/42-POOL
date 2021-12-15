@@ -6,31 +6,29 @@
 #    By: ayalman <ayalman@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/14 23:31:40 by ayalman           #+#    #+#              #
-#    Updated: 2021/12/15 02:02:58 by ayalman          ###   ########.Tr        #
+#    Updated: 2021/12/15 22:55:48 by ayalman          ###   ########.Tr        #
 #                                                                              #
 # **************************************************************************** #
-INC = includes
-SRCS = srcs/ft_putchar.c srcs/ft_swap.c srcs/ft_putstr.c srcs/ft_strlen.c srcs/ft_strcmp.c 
-OBJS = ${SRCS:.c=.o}
-CFLAGS = -Wall -Werror -Wextra
-RM = rm -f
-ID = libft.a
-LIBC = ar rc
-LIBR = ranlib
-CC = gcc
+SRCS		= ft_putchar.c ft_swap.c ft_putstr.c ft_strlen.c ft_strcmp.c
 
-clean: 
-	${RM} ${OBJS}
+OBJS		= $(addprefix srcs/, ${SRCS:.c=.o})
 
-fclean: clean
-	${RM} ${OBJS}
+NAME		= libft.a
+RM			= rm -f
+.c.o:
+			gcc -Wall -Wextra -Werror -c -I./includes $< -o ${<:.c=.o}
 
-re: fclean all
+${NAME}:	${OBJS}
+			ar -rcs $@ $^
 
-all: ${ID}
+all:		${NAME}
 
+clean:
+			${RM} ${OBJS}
 
-${ID}: ${OBJS}
+fclean:		clean
+			${RM} ${NAME}
 
+re:			fclean all
 
-
+.PHONY:		all clean fclean re

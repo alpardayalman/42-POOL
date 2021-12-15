@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_map.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayalman <ayalman@42kocaeli.com>            +#+  +:+       +#+        */
+/*   By: ayalman <ayalman@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/27 21:05:14 by ayalman           #+#    #+#             */
-/*   Updated: 2021/12/15 21:50:40 by ayalman          ###   ########.Tr       */
+/*   Created: 2021/12/16 00:34:40 by ayalman           #+#    #+#             */
+/*   Updated: 2021/12/16 00:39:47 by ayalman          ###   ########.Tr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdlib.h>
 
-void	ft_swap(int	*a,	int	*b)
+int	*ft_map(int *tab, int length, int(*f)(int))
 {
-	int	tempo;
+	int	i;
+	int	*result;
 
-	tempo = *a;
-	*a = *b;
-	*b = tempo;
+	result = malloc (length * 4);
+	if (!result)
+		return (0);
+	i = 0;
+	while (i < length)
+	{
+		result[i] = (*f)(tab[i]);
+		i++;
+	}
+	return (result);
 }

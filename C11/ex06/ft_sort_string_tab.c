@@ -1,20 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_sort_string_tab.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayalman <ayalman@42kocaeli.com>            +#+  +:+       +#+        */
+/*   By: ayalman <ayalman@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/27 21:05:14 by ayalman           #+#    #+#             */
-/*   Updated: 2021/12/15 21:50:40 by ayalman          ###   ########.Tr       */
+/*   Created: 2021/12/16 02:00:41 by ayalman           #+#    #+#             */
+/*   Updated: 2021/12/16 02:02:32 by ayalman          ###   ########.Tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int	*a,	int	*b)
+void	ft_sort_string_tab(char **tab)
 {
-	int	tempo;
-
-	tempo = *a;
-	*a = *b;
-	*b = tempo;
+	
 }

@@ -6,11 +6,9 @@
 /*   By: ayalman <ayalman@42kocaeli.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 21:44:52 by ayalman           #+#    #+#             */
-/*   Updated: 2021/11/27 22:32:31 by ayalman          ###   ########.fr       */
+/*   Updated: 2021/12/15 21:50:06 by ayalman          ###   ########.Tr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
