@@ -1,0 +1,6 @@
+Credentials cache: API:960BF50F-CAF5-4F46-9C3F-3218AADF0FF5
+        Principal: ayalman@42KOCAELI.COM.TR
+
+  Issued                Expires               Principal
+Nov 23 15:41:22 2021  Nov 24 01:41:22 2021  krbtgt/42KOCAELI.COM.TR@42KOCAELI.COM.TRCredentials cache: API:C8F1494C-5F85-447A-B228-659A60EC65B7
+        Principal: ayalman@42KOCAELI.COM.TR
