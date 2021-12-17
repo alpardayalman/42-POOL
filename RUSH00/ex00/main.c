@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stock_str.h                                     :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayalman <ayalman@student.42.fr>            +#+  +:+       +#+        */
+/*   By: Talha, Alp, Mehmet.                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/13 21:35:30 by ayalman           #+#    #+#             */
-/*   Updated: 2021/12/13 23:22:03 by ayalman          ###   ########.Tr       */
+/*   Created: 2021/11/28 18:34:15 by ayalman           #+#    #+#             */
+/*   Updated: 2021/11/28 19:50:29 by ayalman          ###   ########.Tr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef FT_STOCK_STR_H
-# define FT_STOCK_STR_H
 
-typedef struct s_stock_str
+#include <unistd.h>
+
+void	ft_putchar(char c);
+
+void	rush(int x, int y);
+
+int	main(void)
 {
-	int		size;
-	char	*str;
-	char	*copy;
-}	t_stock_str;
-
-#endif
+	rush(5, 5);
+}

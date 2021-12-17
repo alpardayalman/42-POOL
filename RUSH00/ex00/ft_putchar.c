@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stock_str.h                                     :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayalman <ayalman@student.42.fr>            +#+  +:+       +#+        */
+/*   By: Talha, Alp, Mehmet.                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/13 21:35:30 by ayalman           #+#    #+#             */
-/*   Updated: 2021/12/14 04:04:30 by ayalman          ###   ########.Tr       */
+/*   Created: 2021/11/28 18:34:15 by ayalman           #+#    #+#             */
+/*   Updated: 2021/11/28 19:50:05 by ayalman          ###   ########.Tr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef FT_STOCK_STR_H
-# define FT_STOCK_STR_H
 
-struct s_stock_str *ft_strs_to_tab(int ac, char **av);
+#include <unistd.h>
 
-typedef struct s_stock_str
+void	ft_putchar(char c)
 {
-	int		size;
-	char	*str;
-	char	*copy;
-}	t_stock_str;
-
-#endif
+	write(1, &c, 1);
+}
